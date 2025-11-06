@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  SEO  -->
     <title>Julio Akamine - Desenvolvedor Frontend</title>
-    <meta name="description"
-        content="Portfólio de Julio Akamine - Desenvolvedor Frontend Júnior especializado em React, TypeScript e Node.js">
+    <meta name="description"content="Portfólio de Julio Akamine - Desenvolvedor Frontend - Aberto a novas oportunidades de trabalho. - conhecimentos em React, React Native TypeScript e Node.js">
+    <meta name="keywords" content="Desenvolvedor Frontend Júnior, Desenvolvedor Frontend, Programador Frontend, Desenvolvedor Web, Desenvolvedor React, Desenvolvedor React Native, Desenvolvedor JavaScript, Desenvolvedor Node.js, Desenvolvedor Full Stack, Portfólio Julio Akamine, Julio Akamine, Julio Cesar Akamine Leite, Desenvolvedor Júnior, Aberto a trabalho, Disponível para trabalho">
+    <meta name="author" content="Julio Akamine">
 
     <!-- Importação do Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,23 +16,31 @@
     <!-- Importação dos ícones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- Importação font JetBrains -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    
+    <!--  Importação FavIcon  -->
+    <link rel="shortcut icon" href="Assets/favicon.jpg" type="image/x-icon">
+
     <!-- Configuração personalizada do Tailwind -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        background: '#0d1117', // Cor de fundo geral
-                        foreground: '#e6edf3', // Cor principal do texto
-                        muted: '#161b22', // Fundo mais escuro para blocos
-                        'muted-foreground': '#8b949e', // Texto secundário
-                        border: '#30363d', // Cor das bordas
-                        accent: '#1f6feb', // Cor de destaque (links e hover)
-                        'accent-hover': '#388bfd', // Cor de destaque ao passar o mouse
+                        background: '#0d1117',
+                        foreground: '#e6edf3',
+                        muted: '#161b22',
+                        'muted-foreground': '#8b949e',
+                        border: '#30363d',
+                        accent: '#1f6feb',
+                        'accent-hover': '#388bfd',
                     },
                     fontFamily: {
-                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Noto Sans', 'Helvetica', 'Arial', 'sans-serif'],
-                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Consolas', 'monospace'],
+                        sans: ['"JetBrains Mono"', 'monospace'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
                     }
                 }
             }
@@ -42,13 +52,14 @@
         body {
             background-color: #0d1117;
             color: #e6edf3;
+            font-family: 'JetBrains Mono', monospace;
         }
     </style>
 </head>
 
 <body class="font-sans antialiased">
 
-    <!-- ====== CABEÇALHO ====== -->
+    <!-- ====== Header ====== -->
     <header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex h-14 items-center justify-end">
@@ -83,7 +94,7 @@
     </header>
 
     <main>
-        <!-- ====== SEÇÃO INICIAL (HERO) ====== -->
+        <!-- ====== Hero ====== -->
         <section class="py-14 border-b border-border">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <div class="flex flex-col md:flex-row items-start gap-8">
@@ -105,7 +116,7 @@
                         <div class="flex flex-wrap gap-4 text-sm text-muted-foreground">
                             <div class="flex items-center gap-2">
                                 <i class="bi bi-geo-alt"></i>
-                                <span>Bragança Paulista, SP</span>
+                                <span>Bragança Paulista,SP</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <i class="bi bi-envelope"></i>
@@ -118,7 +129,7 @@
             </div>
         </section>
 
-        <!-- ====== SEÇÃO SOBRE ====== -->
+        <!-- ====== SOBRE ====== -->
         <section id="sobre" class="py-10 border-b border-border">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <h2 class="text-2xl font-bold text-foreground mb-4">Sobre</h2>
@@ -134,7 +145,7 @@
             </div>
         </section>
 
-        <!-- ====== SEÇÃO EXPERIÊNCIA ====== -->
+        <!-- ====== EXPERIÊNCIA ====== -->
         <section id="experiencia" class="py-10 border-b border-border">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <h2 class="text-2xl font-bold text-foreground mb-6">Experiência</h2>
@@ -142,11 +153,11 @@
 
 
 
-                    <!-- Experiência 2 -->
+                    <!-- Experiência 1 -->
                     <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
                         <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                             <div>
-                                
+
                                 <h3 class="text-lg font-semibold text-foreground">Desenvolvedor Front-End</h3>
                                 <p class="text-sm text-muted-foreground">Spadoni Projetos</p>
                             </div>
@@ -158,69 +169,90 @@
                             <li>Melhoria de Lighthouse</li>
                             <li>Stack: HTML, CSS, JS, EmailJS</li>
                         </ul>
+
                     </div>
+                    <hr class="border border-border ">
 
 
-
-                    <!-- Experiência 3 -->
+                    <!-- Experiência 2 -->
                     <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
-                        <div class=" flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+                        <div class=" flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                             <div>
-                                
+
                                 <h3 class="text-lg font-semibold text-foreground">Preparador de Máquinas</h3>
                                 <p class="text-sm text-muted-foreground">Plasticogeral Embalagens</p>
                             </div>
                             <span class="text-sm text-muted-foreground">Dez 2024 - Mai 2025</span>
                         </div>
-                        <p class="text-sm text-muted-foreground">Caieiras, São Paulo, Brasil</p>
+
+                        <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-muted-foreground">
+                            <li>Manutenção de máquinas de corte e solda de embalagens plásticas.</li>
+                            <li>Liderança da equipe do turno da tarde. </li>
+                            <li>Acerto de pedidos.</li>
+                        </ul>
                     </div>
 
 
-                    <!-- Experiência 4 -->
+                    <!-- Experiência 3 -->
                     <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
                         <div class="relative flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                             <div>
-                                 <i class="bi bi-arrow-up-circle text-[rgb(48_54_61_/var(--tw-border-opacity,1))]  absolute top-[-45px] "></i>
+                                <i
+                                    class="bi bi-arrow-bar-up text-[rgb(48_54_61_/var(--tw-border-opacity,1))]  absolute top-[-45px] "></i>
                                 <h3 class="text-lg font-semibold text-foreground">Operador de máquinas fixas III</h3>
                                 <p class="text-sm text-muted-foreground">Plasticogeral Embalagens</p>
                             </div>
                             <span class="text-sm text-muted-foreground">Set 2023 - Dez 2024</span>
                         </div>
-                        <p class="text-sm text-muted-foreground">Caieiras, São Paulo, Brasil</p>
+                        <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-muted-foreground">
+                            <li>Operação de máquina de corte e solda de embalagens plásticas.</li>
+                            <li>Conferencia de pedido (largura, comprimento e espessura). </li>
+
+                        </ul>
+
                     </div>
 
                     <!-- Experiência 4 -->
                     <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
                         <div class="relative flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                             <div>
-                                <i class="bi bi-arrow-up-circle text-[rgb(48_54_61_/var(--tw-border-opacity,1))]  absolute top-[-45px] "></i>
+                                <i
+                                    class="bi bi-arrow-bar-up text-[rgb(48_54_61_/var(--tw-border-opacity,1))]  absolute top-[-45px] "></i>
                                 <h3 class="text-lg font-semibold text-foreground">Alimentador de linha de produção</h3>
                                 <p class="text-sm text-muted-foreground">Plasticogeral Embalagens</p>
                             </div>
                             <span class="text-sm text-muted-foreground">Dez 2022 - Set 2023</span>
                         </div>
-                        <p class="text-sm text-muted-foreground">Caieiras, São Paulo, Brasil</p>
+                        <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-muted-foreground">
+                            <li>Alimentação de linha de produção.</li>
+
+
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== SEÇÃO PROJETOS ====== -->
+        <!-- ====== PROJETOS ====== -->
         <section id="projetos" class="py-10 border-b border-border">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <h2 class="text-2xl font-bold text-foreground mb-6">Projetos</h2>
-                <div class="grid gap-6 md:grid-cols-2">
+                <div class="grid gap-6 md:grid-cols-1">
 
                     <!-- Projeto 1 -->
                     <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
-                        <h3 class="text-lg font-semibold text-foreground mb-2">Spadoni Projetos</h3>
+                        <div class="flex justify-between">
+                            <h3 class="text-lg font-semibold text-foreground mb-2">Spadoni Projetos</h3>
+                            <span
+                                class="px-3 py-0 text-xs h-[25px] font-medium bg-muted text-foreground rounded-full align-center flex items-center">Frontend</span>
+                        </div>
                         <p class="text-sm text-muted-foreground mb-4 leading-relaxed">
                             Redesign completo de website com foco em performance e responsividade. Implementação de
                             formulário de contato com EmailJS.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">HTML</span>
+                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full  ">HTML</span>
                             <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">CSS</span>
                             <span
                                 class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">JavaScript</span>
@@ -237,88 +269,66 @@
 
                     <!-- Projeto 2 -->
                     <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
-                        <h3 class="text-lg font-semibold text-foreground mb-2">Projetos Freelance</h3>
-                        <p class="text-sm text-muted-foreground mb-4 leading-relaxed">
-                            Desenvolvimento de páginas responsivas com React e TypeScript, incluindo integração com APIs
-                            REST.
+                        <div class="flex justify-between">
+                            <h3 class="text-lg font-semibold text-foreground mb-2">Teste Front-End</h3>
+                            <span
+                                class="px-3 py-0 text-xs h-[25px] font-medium bg-muted text-foreground rounded-full align-center flex items-center">Frontend</span>
+                        </div>
+                        <p class="text-sm text-muted-foreground mb-4 leading-relaxed "">
+                            Desafio técnico Union Developers .Aplicação web desenvolvida com React, TypeScript e Tailwind CSS que consome a API randomuser.me para listar e exibir detalhes de usuários. O projeto conta com paginação, filtros de busca por nome e idade, e visualização individual de perfis, oferecendo uma interface moderna e responsiva.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React</span>
+                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React(CRA)</span>
                             <span
                                 class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">TypeScript</span>
                             <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Next.js</span>
+                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React Router</span>
                             <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Axios</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">HTML</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">CSS</span>
+                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Tailwind</span>
+                           
                         </div>
+                       
+                         <a href="https://julioakaminee.github.io/teste-frontend/" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
+                            Ver projeto
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- ====== SEÇÃO HABILIDADES ====== -->
-        <section id="habilidades" class="py-10 border-b border-border">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-                <h2 class="text-2xl font-bold text-foreground mb-6">Habilidades</h2>
-                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-                    <!-- Habilidades Frontend -->
-                    <div>
-                        <h3 class="text-base font-semibold text-foreground mb-3">Frontend</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React
-                                Native</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">TypeScript</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Next.js</span>
+                    <!-- Projeto 3 -->
+                    <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
+                        <div class="flex justify-between">
+                            <h3 class="text-lg font-semibold text-foreground mb-2">Nikel</h3>
+                                                        <span
+                                class="px-3 py-0 text-xs h-[25px] font-medium bg-muted text-foreground rounded-full align-center flex items-center">Frontend</span>
+                        </div>
+                        <p class="text-sm text-muted-foreground mb-4 leading-relaxed "">
+                         O Nikel é uma aplicação simples de controle financeiro pessoal. Projeto desenvolvido para o curso Codaí 2.0
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span
                                 class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">HTML</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">CSS</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Tailwind
-                                CSS</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">CSS</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">JavaScript</span>
                             <span
                                 class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Bootstrap</span>
+                           
                         </div>
-                    </div>
-
-                    <!-- Habilidades Backend -->
-                    <div>
-                        <h3 class="text-base font-semibold text-foreground mb-3">Backend</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Node.js</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">MySQL</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Postman
-                                API</span>
-                        </div>
-                    </div>
-
-                    <!-- Ferramentas -->
-                    <div>
-                        <h3 class="text-base font-semibold text-foreground mb-3">Ferramentas</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Git</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Figma</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Vercel</span>
-                            <span
-                                class="px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Axios</span>
-                        </div>
+                         <a href="https://julioakaminee.github.io/Nikel/" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
+                            Ver projeto
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== SEÇÃO FORMAÇÃO ====== -->
+
+        <!-- ====== FORMAÇÃO ====== -->
         <section id="formacao" class="py-10 border-b border-border">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <h2 class="text-2xl font-bold text-foreground mb-6">Formação</h2>
@@ -332,11 +342,12 @@
                     </div>
                     <p class="text-sm text-muted-foreground">Concluído</p>
 
-                     <a href="https://www.linkedin.com/in/julioakamine/overlay/1751060992658/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
-                            Ver Diploma
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </a>
+                    <a href="https://www.linkedin.com/in/julioakamine/overlay/1751060992658/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
+                        Ver Diploma
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
 
 
@@ -344,7 +355,7 @@
             </div>
         </section>
 
-        <!-- ====== SEÇÃO CERTIFICADOS ====== -->
+        <!-- ======  CERTIFICADOS ====== -->
         <section id="certificados" class="py-10 border-b border-border  ">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl flex gap-5 flex-col">
 
@@ -357,13 +368,14 @@
                         </div>
                         <span class="text-sm text-muted-foreground">Jun 2024</span>
                     </div>
-                     <a href="https://www.linkedin.com/in/julioakamine/details/certifications/1762298388218/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
-                            Ver Certificado
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </a>
+                    <a href="https://www.linkedin.com/in/julioakamine/details/certifications/1762298388218/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
+                        Ver Certificado
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
-                
+
                 <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
                     <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                         <div>
@@ -372,11 +384,12 @@
                         </div>
                         <span class="text-sm text-muted-foreground">Mai 2025</span>
                     </div>
-                    <a href="https://www.linkedin.com/in/julioakamine/details/certifications/1762298322360/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
-                            Ver Certificado
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </a>
+                    <a href="https://www.linkedin.com/in/julioakamine/details/certifications/1762298322360/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
+                        Ver Certificado
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
 
                 <div class="border border-border rounded-lg p-5 hover:border-accent transition-colors">
@@ -388,28 +401,102 @@
                         <span class="text-sm text-muted-foreground">Mai 2025</span>
                     </div>
 
-                     <a href="https://www.linkedin.com/in/julioakamine/details/certifications/1762298457748/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
-                            Ver Certificado
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </a>
+                    <a href="https://www.linkedin.com/in/julioakamine/details/certifications/1762298457748/single-media-viewer/?profileId=ACoAADyACTYBTRCINTZ_UEQFsKAHpoGyE85yGmo"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors">
+                        Ver Certificado
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
         </section>
 
-        <!-- ====== SEÇÃO CONTATO ====== -->
+        <!-- ====== SEÇÃO HABILIDADES ====== -->
+        <section id="habilidades" class="py-10 border-b border-border">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <h2 class="text-2xl font-bold text-foreground mb-6">Habilidades</h2>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Habilidades Frontend -->
+                    <div>
+                        <h3 class="text-base font-semibold text-foreground mb-3">Frontend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">React
+                                Native</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">TypeScript</span>
+
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">HTML</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">CSS</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Tailwind
+                                CSS</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <!-- Habilidades Backend -->
+                    <div>
+                        <h3 class="text-base font-semibold text-foreground mb-3">Backend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Node.js</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">PHP(Básico)</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">MySQL</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Postman
+                                API</span>
+                        </div>
+                    </div>
+
+                    <!-- Ferramentas -->
+                    <div>
+                        <h3 class="text-base font-semibold text-foreground mb-3">Ferramentas</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Git</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Figma</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Vercel</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Axios</span>
+                        </div>
+                    </div>
+
+                    <!--Soft Skills-->
+                    <div>
+                        <h3 class="text-base font-semibold text-foreground mb-3">Soft Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Boa
+                                comunicação</span>
+                            <span
+                                class="hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Fácilidade
+                                de aprendizado</span>
+                            <span
+                                class=" hover:bg-gray-800 px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Resolução
+                                de problemas</span>
+                            <span
+                                class="hover:bg-gray-800  px-3 py-1 text-xs font-medium bg-muted text-foreground rounded-full">Trabalho
+                                em equipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== CONTATO ====== -->
         <section id="contato" class="py-10">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <h2 class="text-2xl font-bold text-foreground mb-6">Contato</h2>
@@ -454,49 +541,7 @@
         </section>
     </main>
 
-    <!-- ====== JAVASCRIPT ====== -->
-    <script>
-        // Rolagem suave ao clicar nos links do menu
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 56;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Destacar o link ativo conforme o usuário rola a página
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (window.pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('text-foreground');
-                link.classList.add('text-muted-foreground');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.remove('text-muted-foreground');
-                    link.classList.add('text-foreground');
-                }
-            });
-        });
-    </script>
 
 </body>
 
